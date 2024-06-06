@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('test @exitoso', async ({ page }) => {
   await page.goto('https://qalafija.qalaub.com/');
   await page.getByPlaceholder('Usuario').click();
   await page.getByPlaceholder('Usuario').fill('');
