@@ -13,7 +13,7 @@ test('test', async ({ page }) => {
   await page.getByRole('link', { name: 'Registrar Cuenta' }).click();
   await page.getByLabel('* Tipo de documento').selectOption('Cédula de ciudadanía');
   await page.getByPlaceholder('Número de identificación').click();
-  await page.getByPlaceholder('Número de identificación').fill('5137839934');
+  await page.getByPlaceholder('Número de identificación').fill('51378399345');
   await page.getByPlaceholder('Ej. Bogota').click();
   await page.getByPlaceholder('Ej. Bogota').fill('melgar');
   await page.locator('div').filter({ hasText: /^\* Fecha de expedición$/ }).getByPlaceholder('DD/MM/YY').click();
@@ -37,7 +37,7 @@ test('test', async ({ page }) => {
   await page.locator('div').filter({ hasText: /^\* Fecha de Nacimiento$/ }).getByPlaceholder('DD/MM/YY').click();
   await page.locator('div').filter({ hasText: /^\* Fecha de Nacimiento$/ }).getByPlaceholder('DD/MM/YY').fill('02/04/2000');
   await page.getByPlaceholder('@example.com').click();
-  await page.getByPlaceholder('@example.com').fill('ninguno081@nn.com');
+  await page.getByPlaceholder('@example.com').fill('ninguno0815@nn.com');
   await page.getByPlaceholder('Ej. Avenida Calle 2 No 10-').click();
   await page.getByPlaceholder('Ej. Avenida Calle 2 No 10-').fill('torre3apto1001');
   await page.getByPlaceholder('Ej. Bogotá').click();
